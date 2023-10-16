@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import image_1 from '@/images/1.jpeg';
 import image_2 from '@/images/2.jpeg';
 import image_3 from '@/images/3.jpeg';
@@ -10,7 +11,15 @@ import image_8 from '@/images/8.jpeg';
 import image_9 from '@/images/9.jpeg';
 import image_10 from '@/images/10.jpeg';
 import image_11 from '@/images/11.jpeg';
-import { useRouter } from 'next/router';
+import image_12 from '@/images/12.jpg';
+import image_13 from '@/images/13.jpeg';
+import image_14 from '@/images/14.jpeg';
+import image_15 from '@/images/15.jpeg';
+import image_16 from '@/images/16.jpeg';
+import image_17 from '@/images/17.jpeg';
+import image_18 from '@/images/18.jpeg';
+import image_19 from '@/images/19.jpeg';
+
 
 export default function Home() {
     const products = [
@@ -84,13 +93,62 @@ export default function Home() {
             payment_time_price: "3.000",
             price_counted: "80.000" 
         },
-        // {
-        //     name: 'Bateria Cocina IMUSA 5pz Talen',
-        //     img: image_1,
-        //     payment_time: "40 dias",
-        //     payment_time_price: "5000",
-        //     price_counted: "160.000" 
-        // },
+        {
+            name: 'Freidora de Aire Imusa 3,2 litros',
+            img: image_12,
+            payment_time: "60 dias",
+            payment_time_price: "8.000",
+            price_counted: "380.000" 
+        },
+        {
+            name: 'Bateria 7 piezas IMUSA',
+            img: image_13,
+            payment_time: "60 dias",
+            payment_time_price: "7.000",
+            price_counted: "360.000" 
+        },
+        {
+            name: 'Juego de ollas de 10 piezas Imusa Talent',
+            img: image_14,
+            payment_time: "70 dias",
+            payment_time_price: "8.000",
+            price_counted: "460.000" 
+        },
+        {
+            name: 'Televisor Kalley 55"',
+            img: image_15,
+            payment_time: "120 dias",
+            payment_time_price: "25.000",
+            price_counted: "2.400.000" 
+        },
+        {
+            name: 'Waflera giratoria Kalley',
+            img: image_16,
+            payment_time: "40 dias",
+            payment_time_price: "5.000",
+            price_counted: "160.000" 
+        },
+        {
+            name: 'Smart TV 58" TCL',
+            img: image_17,
+            payment_time: "120 dias",
+            payment_time_price: "26.000",
+            price_counted: "2.500.000" 
+        },
+        {
+            name: 'Smart TV 4K UHD 43" Kalley',
+            img: image_18,
+            payment_time: "120 dias",
+            payment_time_price: "15.000",
+            price_counted: "1.300.000" 
+        },
+        {
+            name: 'Smart TV HD 32"',
+            img: image_19,
+            payment_time: "90 dias",
+            payment_time_price: "13.000",
+            price_counted: "890.000" 
+        },
     ];
 
     const link_whatsapp = 'https://api.whatsapp.com/send?phone=+573008518082&text=Hola%20quiero%20saber%20mas%20informacion%20sobre%20uno%20de%20tus%20productos'
