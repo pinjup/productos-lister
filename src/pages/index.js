@@ -105,7 +105,7 @@ export default function Home() {
         <main
             className={`flex min-h-screen flex-col gap-10 items-center text-center py-8 px-5 font-mono`}
         >
-            <h1 className="text-4xl font-bold">Productos Lister</h1>
+            <h1 className="text-4xl font-bold">Productos Lister /</h1>
 
             <div id="container-products" className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {products.map((product) => (
