@@ -93,6 +93,8 @@ export default function Home() {
         // },
     ];
 
+    
+
     const link_whatsapp = 'https://api.whatsapp.com/send?phone=+573008518082&text=Hola%20quiero%20saber%20mas%20informacion%20sobre%20uno%20de%20tus%20productos'
 
     const router = useRouter()
