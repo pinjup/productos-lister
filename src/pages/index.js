@@ -19,6 +19,7 @@ import image_16 from '@/images/16.jpeg';
 import image_17 from '@/images/17.jpeg';
 import image_18 from '@/images/18.jpeg';
 import image_19 from '@/images/19.jpeg';
+import image_20 from '@/images/20.jpeg';
 
 
 export default function Home() {
@@ -148,6 +149,13 @@ export default function Home() {
             payment_time: "90 dias",
             payment_time_price: "13.000",
             price_counted: "890.000" 
+        },
+        {
+            name: 'Licuadora Optimix Plus',
+            img: image_20,
+            payment_time: "40 dias",
+            payment_time_price: "3.500",
+            price_counted: "87.000" 
         },
     ];
 
