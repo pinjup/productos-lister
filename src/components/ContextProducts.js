@@ -19,6 +19,10 @@ import image_17 from '@/images/17.jpeg';
 import image_18 from '@/images/18.jpeg';
 import image_19 from '@/images/19.jpeg';
 import image_20 from '@/images/20.jpeg';
+import image_21 from '@/images/21.jpeg';
+import image_22 from '@/images/22.jpeg';
+import image_23 from '@/images/23.jpeg';
+import image_24 from '@/images/24.jpeg';
 
 const ContextProducts = createContext()
 
@@ -158,6 +162,34 @@ function ContextProviderP({ children }) {
             payment_time: '40 dias',
             payment_time_price: '3.500',
             price_counted: '87.000',
+        },
+        {
+            name: 'Sanduchera Kalley Blanca',
+            img: image_21,
+            payment_time: '40 dias',
+            payment_time_price: '3.000',
+            price_counted: '80.000',
+        },
+        {
+            name: 'Set olla 20cm y sarten 20cm',
+            img: image_22,
+            payment_time: '40 dias',
+            payment_time_price: '4.000',
+            price_counted: '120.000',
+        },
+        {
+            name: 'Cocineta de 1 puesto Haceb',
+            img: image_23,
+            payment_time: '35 dias',
+            payment_time_price: '4.000',
+            price_counted: '110.000',
+        },
+        {
+            name: 'Cocineta de 1 puesto abba',
+            img: image_24,
+            payment_time: '30 dias',
+            payment_time_price: '5.000',
+            price_counted: '120.000',
         },
     ];
 

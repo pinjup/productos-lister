@@ -64,7 +64,7 @@ export default function Home() {
                 </div>
             </div>
 
-            { ContextP?.modal && (
+            {ContextP?.modal && (
                 <div id="modal-products" className="fixed top-20 w-full flex justify-center p-3 ">
 
                     <div className='w-full h-auto max-w-[430px] p-3 py-5 relative flex flex-col gap-3 items-center justify-center rounded-lg bg-white border border-black'>
