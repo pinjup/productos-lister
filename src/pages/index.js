@@ -1,208 +1,115 @@
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import image_1 from '@/images/1.jpeg';
-import image_2 from '@/images/2.jpeg';
-import image_3 from '@/images/3.jpeg';
-import image_4 from '@/images/4.jpeg';
-// import image_5 from '@/images/5.jpeg';
-import image_6 from '@/images/6.jpeg';
-import image_7 from '@/images/7.jpeg';
-import image_8 from '@/images/8.jpeg';
-import image_9 from '@/images/9.jpeg';
-import image_10 from '@/images/10.jpeg';
-import image_11 from '@/images/11.jpeg';
-import image_12 from '@/images/12.jpg';
-import image_13 from '@/images/13.jpeg';
-import image_14 from '@/images/14.jpeg';
-import image_15 from '@/images/15.jpeg';
-import image_16 from '@/images/16.jpeg';
-import image_17 from '@/images/17.jpeg';
-import image_18 from '@/images/18.jpeg';
-import image_19 from '@/images/19.jpeg';
-import image_20 from '@/images/20.jpeg';
+import Header from '@/components/Header';
+import { useContext } from 'react';
+import { ContextProducts } from '@/components/ContextProducts';
+import Link from 'next/link';
 
 export default function Home() {
-    const products = [
-        {
-            name: 'Bateria Cocina IMUSA 5pz Talen',
-            img: image_1,
-            payment_time: '40 dias',
-            payment_time_price: '5.000',
-            price_counted: '160.000',
-        },
-        {
-            name: 'Juego de 2 Sartenes IMUSA',
-            img: image_2,
-            payment_time: '40 dias',
-            payment_time_price: '3.000',
-            price_counted: '85.000',
-        },
-        {
-            name: 'Set 2 Calderos',
-            img: image_3,
-            payment_time: '40 dias',
-            payment_time_price: '4.500',
-            price_counted: '130.000',
-        },
-        {
-            name: 'Combo Caldero y sarten',
-            img: image_4,
-            payment_time: '40 dias',
-            payment_time_price: '3.500',
-            price_counted: '95.000',
-        },
-        {
-            name: 'Arrocera Kalley 2 libras',
-            img: image_6,
-            payment_time: '48 dias',
-            payment_time_price: '5.000',
-            price_counted: '160.000',
-        },
-        {
-            name: 'Freidora de aire Black Decker 4.5l',
-            img: image_7,
-            payment_time: '60 dias',
-            payment_time_price: '9.000',
-            price_counted: '410.000',
-        },
-        {
-            name: 'Ventilador 3 en 1 Kalley',
-            img: image_8,
-            payment_time: '60 dias',
-            payment_time_price: '8.000',
-            price_counted: '260.000',
-        },
-        {
-            name: 'Ventilador Silence Force Plus 2 en 1',
-            img: image_9,
-            payment_time: '70 dias',
-            payment_time_price: '7.500',
-            price_counted: '320.000',
-        },
-        {
-            name: 'Ventilador Samurai de pared blanco',
-            img: image_10,
-            payment_time: '70 dias',
-            payment_time_price: '7.000',
-            price_counted: '310.000',
-        },
-        {
-            name: 'Set Cacerolas Imusa',
-            img: image_11,
-            payment_time: '40 dias',
-            payment_time_price: '3.000',
-            price_counted: '80.000',
-        },
-        {
-            name: 'Freidora de Aire Imusa 3,2 litros',
-            img: image_12,
-            payment_time: '60 dias',
-            payment_time_price: '8.000',
-            price_counted: '380.000',
-        },
-        {
-            name: 'Bateria 7 piezas IMUSA',
-            img: image_13,
-            payment_time: '60 dias',
-            payment_time_price: '7.000',
-            price_counted: '360.000',
-        },
-        {
-            name: 'Juego de ollas de 10 piezas Imusa Talent',
-            img: image_14,
-            payment_time: '70 dias',
-            payment_time_price: '8.000',
-            price_counted: '460.000',
-        },
-        {
-            name: 'Televisor Kalley 55"',
-            img: image_15,
-            payment_time: '120 dias',
-            payment_time_price: '25.000',
-            price_counted: '2.400.000',
-        },
-        {
-            name: 'Waflera giratoria Kalley',
-            img: image_16,
-            payment_time: '40 dias',
-            payment_time_price: '5.000',
-            price_counted: '160.000',
-        },
-        {
-            name: 'Smart TV 58" TCL',
-            img: image_17,
-            payment_time: '120 dias',
-            payment_time_price: '26.000',
-            price_counted: '2.500.000',
-        },
-        {
-            name: 'Smart TV 4K UHD 43" Kalley',
-            img: image_18,
-            payment_time: '120 dias',
-            payment_time_price: '15.000',
-            price_counted: '1.300.000',
-        },
-        {
-            name: 'Smart TV HD 32"',
-            img: image_19,
-            payment_time: '90 dias',
-            payment_time_price: '13.000',
-            price_counted: '890.000',
-        },
-        {
-            name: 'Licuadora Optimix Plus',
-            img: image_20,
-            payment_time: '40 dias',
-            payment_time_price: '3.500',
-            price_counted: '87.000',
-        },
-    ];
 
     const link_whatsapp =
-        'https://api.whatsapp.com/send?phone=+573008518082&text=Hola%20quiero%20saber%20mas%20informacion%20sobre%20uno%20de%20tus%20productos';
+        'https://api.whatsapp.com/send?phone=573008518082&text=Hola%20quiero%20mas%20informacion%20sobre';
 
     const router = useRouter();
 
+    const ContextP = useContext(ContextProducts)
+
+    const infoLink = `${link_whatsapp}%20${ContextP?.modalInfo?.name?.split(" ")?.join("%20")}`
+
+    const descriptionProduct = (product) => {
+        ContextP.setModal(false)
+        ContextP.setModalInfo(product)
+        ContextP.setModal(true)
+    }
+
     return (
-        <div
-            className={`flex min-h-screen flex-col gap-10 items-center text-center py-8 px-5`}
-        >
-            <h1 className="text-4xl font-bold">Productos Lister</h1>
-
+        <div className='relative'>
+            <Header />
             <div
-                id="container-products"
-                className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"
+                className={`flex min-h-screen flex-col gap-10 items-center text-center py-8 px-5`}
             >
-                {products.map((product) => (
-                    <div
-                        key={product.name}
-                        onClick={() => router.push(link_whatsapp)}
-                        className="flex flex-col gap-5 items-start rounded-lg cursor-pointer border border-black p-4 bg-[#e5e6e8]"
-                    >
-                        {/* <h2 className='self-center'>{product.name}</h2> */}
+                <div
+                    id="container-products"
+                    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8"
+                >
+                    {ContextP?.products.map((product) => (
+                        <div
+                            key={product.name}
+                            onClick={() => descriptionProduct(product)}
+                            className="flex flex-col gap-5 items-start rounded-lg cursor-pointer border border-black p-4 bg-cerulean-blue-100"
+                        >
+                            {/* <h2 className='self-center'>{product.name}</h2> */}
 
-                        <Image
-                            src={product.img}
-                            width={270}
-                            height={165}
-                            alt={product.name}
-                            className=" w-72 h-60"
-                        />
+                            <Image
+                                src={product.img}
+                                width={270}
+                                height={165}
+                                alt={product.name}
+                                className=" w-72 h-60"
+                            />
 
-                        <div className="flex flex-col gap-2 pl-2 w-full">
-                            <div className="flex justify-between p-1 bg-green-200">
-                                <span>{product.payment_time}:</span>
-                                <span>${product.payment_time_price}</span>
-                            </div>
+                            <div className="flex flex-col gap-2 pl-2 w-full">
+                                <div className="flex justify-between p-1 bg-green-200">
+                                    <span>{product.payment_time}:</span>
+                                    <span>${product.payment_time_price}</span>
+                                </div>
 
-                            <div className="flex justify-between p-1">
-                                <span>Contado:</span>
-                                <span>${product.price_counted}</span>
+                                <div className="flex justify-between p-1">
+                                    <span>Contado:</span>
+                                    <span>${product.price_counted}</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
+
+            { ContextP?.modal && (
+                <div id="modal-products" className="fixed top-20 w-full flex justify-center p-3 ">
+
+                    <div className='w-full h-auto max-w-[430px] p-3 py-5 relative flex flex-col gap-3 items-center justify-center rounded-lg bg-white border border-black'>
+
+                        <svg onClick={() => ContextP.setModal(false)} className="absolute top-2 right-2 w-7 h-8 cursor-pointer text-gray-800 hover:text-red-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 11.793a1 1 0 1 1-1.414 1.414L10 11.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L8.586 10 6.293 7.707a1 1 0 0 1 1.414-1.414L10 8.586l2.293-2.293a1 1 0 0 1 1.414 1.414L11.414 10l2.293 2.293Z"/>
+                        </svg>
+
+                        <div className=' mt-5 flex flex-col items-center gap-2'>
+                            <span className=''>{ContextP?.modalInfo?.name}</span>
+
+                            <Image
+                                    src={ContextP?.modalInfo?.img}
+                                    width={270}
+                                    height={165}
+                                    alt={ContextP?.modalInfo?.name}
+                                    className=" w-72 h-60"
+                            />
+                        </div>
+
+                        <div className='w-full flex flex-col gap-3 items-center'>
+                            <div className="flex flex-col gap-2 pl-2 w-full">
+                                <span>Formas de pago:</span>
+
+                                <div className='p-2 bg-cerulean-blue-100'>
+                                    <div className="flex justify-between p-1 bg-green-200">
+                                        <span>{ContextP?.modalInfo?.payment_time}:</span>
+                                        <span>${ContextP?.modalInfo?.payment_time_price}</span>
+                                    </div>
+
+                                    <div className="flex justify-between p-1">
+                                        <span>Contado:</span>
+                                        <span>${ContextP?.modalInfo?.price_counted}</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <Link href={infoLink} className='ml-2 p-2 rounded-full self-start text-white bg-cerulean-blue-400' >Consultar</Link>
+                        </div>
+
+                    </div>
+
+                </div>
+                )}
         </div>
     );
 }
