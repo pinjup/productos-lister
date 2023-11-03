@@ -45,11 +45,11 @@ function ContextProviderP({ children }) {
             price_counted: '85.000',
         },
         {
-            name: 'Set 2 Calderos',
+            name: 'Set 2 Calderos Imusa',
             img: image_3,
             payment_time: '40 dias',
-            payment_time_price: '4.500',
-            price_counted: '130.000',
+            payment_time_price: '5.000',
+            price_counted: '140.000',
         },
         {
             name: 'Combo Caldero y sarten',
@@ -63,7 +63,7 @@ function ContextProviderP({ children }) {
             img: image_6,
             payment_time: '48 dias',
             payment_time_price: '5.000',
-            price_counted: '160.000',
+            price_counted: '170.000',
         },
         {
             name: 'Freidora de aire Black Decker 4.5l',
@@ -111,8 +111,8 @@ function ContextProviderP({ children }) {
             name: 'Bateria 7 piezas IMUSA',
             img: image_13,
             payment_time: '60 dias',
-            payment_time_price: '7.000',
-            price_counted: '360.000',
+            payment_time_price: '8.000',
+            price_counted: '380.000',
         },
         {
             name: 'Juego de ollas de 10 piezas Imusa Talent',
