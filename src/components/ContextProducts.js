@@ -23,6 +23,9 @@ import image_21 from '@/images/21.jpeg';
 import image_22 from '@/images/22.jpeg';
 import image_23 from '@/images/23.jpeg';
 import image_24 from '@/images/24.jpeg';
+import image_25 from '@/images/25.jpeg';
+import image_26 from '@/images/26.jpeg';
+import image_27 from '@/images/27.jpeg';
 
 const ContextProducts = createContext()
 
@@ -190,6 +193,27 @@ function ContextProviderP({ children }) {
             payment_time: '30 dias',
             payment_time_price: '5.000',
             price_counted: '120.000',
+        },
+        {
+            name: 'Lonchera Eléctrica Kalley',
+            img: image_25,
+            payment_time: '30 dias',
+            payment_time_price: '4.000',
+            price_counted: '90.000',
+        },
+        {
+            name: 'Exprimidor de citricos oster',
+            img: image_26,
+            payment_time: '40 dias',
+            payment_time_price: '6.000',
+            price_counted: '190.000',
+        },
+        {
+            name: 'Freidora de aire 4 litros imusa',
+            img: image_27,
+            payment_time: '60 dias',
+            payment_time_price: '8.000',
+            price_counted: '420.000',
         },
     ];
 
