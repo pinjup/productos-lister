@@ -103,6 +103,21 @@ export default function Home() {
 
                             </div>
 
+                            <div className="flex flex-col gap-2 pl-2 w-full">
+                                <span>Metodos de pago:</span>
+
+                                <div className='p-2 bg-cerulean-blue-100'>
+
+                                    <div className="flex justify-between p-1">
+                                        <span>Nequi:</span>
+                                        <span>3008518082</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            
+
                             <Link href={infoLink} className='ml-2 p-2 rounded-full self-start text-white bg-cerulean-blue-400' >Consultar</Link>
                         </div>
 
