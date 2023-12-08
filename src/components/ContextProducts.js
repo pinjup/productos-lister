@@ -1,9 +1,8 @@
-import { createContext, useState } from 'react'
+import { createContext, useState } from 'react';
 import image_1 from '@/images/1.jpeg';
 import image_2 from '@/images/2.jpeg';
 import image_3 from '@/images/3.jpeg';
 import image_4 from '@/images/4.jpeg';
-// import image_5 from '@/images/5.jpeg';
 import image_6 from '@/images/6.jpeg';
 import image_7 from '@/images/7.jpeg';
 import image_8 from '@/images/8.jpeg';
@@ -26,12 +25,16 @@ import image_24 from '@/images/24.jpeg';
 import image_25 from '@/images/25.jpeg';
 import image_26 from '@/images/26.jpeg';
 import image_27 from '@/images/27.jpeg';
+import image_28 from '@/images/28.jpeg';
+import image_29 from '@/images/29.jpeg';
+import image_30 from '@/images/30.jpeg';
+import image_31 from '@/images/31.jpeg';
+import image_32 from '@/images/32.jpeg';
+import image_33 from '@/images/33.jpeg';
 
-const ContextProducts = createContext()
+const ContextProducts = createContext();
 
 function ContextProviderP({ children }) {
-
-
     const products = [
         {
             name: 'Bateria Cocina IMUSA 5pz Talen',
@@ -215,17 +218,61 @@ function ContextProviderP({ children }) {
             payment_time_price: '8.000',
             price_counted: '420.000',
         },
+        {
+            name: 'Freidora de aire Kalley',
+            img: image_28,
+            payment_time: '60 dias',
+            payment_time_price: '10.000',
+            price_counted: '450.000',
+        },
+        {
+            name: 'Vajilla Enigma',
+            img: image_29,
+            payment_time: '48 dias',
+            payment_time_price: '6.000',
+            price_counted: '200.000',
+        },
+        {
+            name: 'Sarten imusa',
+            img: image_30,
+            payment_time: '30 dias',
+            payment_time_price: '4.000',
+            price_counted: '95.000',
+        },
+        {
+            name: 'Sarten imusa',
+            img: image_31,
+            payment_time: '30 dias',
+            payment_time_price: '4.000',
+            price_counted: '92.000',
+        },
+        {
+            name: 'Caldero imusa',
+            img: image_32,
+            payment_time: '40 dias',
+            payment_time_price: '5.000',
+            price_counted: '150.000',
+        },
+        {
+            name: 'Caldero imusa',
+            img: image_33,
+            payment_time: '30 dias',
+            payment_time_price: '5.000',
+            price_counted: '120.000',
+        },
     ];
 
-    const [modal, setModal] = useState(false)
+    const [modal, setModal] = useState(false);
 
-    const [modalInfo, setModalInfo] = useState()
+    const [modalInfo, setModalInfo] = useState();
 
     return (
-        <ContextProducts.Provider value={{ modal, setModal, modalInfo, setModalInfo, products }}>
+        <ContextProducts.Provider
+            value={{ modal, setModal, modalInfo, setModalInfo, products }}
+        >
             {children}
         </ContextProducts.Provider>
-    )
+    );
 }
 
-export { ContextProviderP, ContextProducts }
+export { ContextProviderP, ContextProducts };
