@@ -31,6 +31,11 @@ import image_30 from '@/images/30.jpeg';
 import image_31 from '@/images/31.jpeg';
 import image_32 from '@/images/32.jpeg';
 import image_33 from '@/images/33.jpeg';
+import image_34 from '@/images/34.jpeg';
+import image_35 from '@/images/35.jpeg';
+import image_36 from '@/images/36.jpeg';
+import image_37 from '@/images/37.jpeg';
+import image_38 from '@/images/38.jpeg';
 
 const ContextProducts = createContext();
 
@@ -259,6 +264,41 @@ function ContextProviderP({ children }) {
             payment_time: '30 dias',
             payment_time_price: '5.000',
             price_counted: '120.000',
+        },
+        {
+            name: 'Olla imusa',
+            img: image_34,
+            payment_time: '65 dias',
+            payment_time_price: '10.000',
+            price_counted: '600.000',
+        },
+        {
+            name: 'Olla Oster',
+            img: image_35,
+            payment_time: '30 dias',
+            payment_time_price: '4.000',
+            price_counted: '85.000',
+        },
+        {
+            name: 'Extractor Black & Decker',
+            img: image_36,
+            payment_time: '40 dias',
+            payment_time_price: '8.000',
+            price_counted: '300.000',
+        },
+        {
+            name: 'Hervidor agua Kalley',
+            img: image_37,
+            payment_time: '35 dias',
+            payment_time_price: '6.000',
+            price_counted: '130.000',
+        },
+        {
+            name: 'Arrocera Kalley',
+            img: image_38,
+            payment_time: '60 dias',
+            payment_time_price: '6.000',
+            price_counted: '180.000',
         },
     ];
 
