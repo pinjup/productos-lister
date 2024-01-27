@@ -282,7 +282,7 @@ function ContextProviderP({ children }) {
         {
             name: 'Extractor Black & Decker',
             img: image_36,
-            payment_time: '40 dias',
+            payment_time: '45 dias',
             payment_time_price: '8.000',
             price_counted: '300.000',
         },
@@ -296,7 +296,7 @@ function ContextProviderP({ children }) {
         {
             name: 'Arrocera Kalley',
             img: image_38,
-            payment_time: '60 dias',
+            payment_time: '50 dias',
             payment_time_price: '6.000',
             price_counted: '180.000',
         },
