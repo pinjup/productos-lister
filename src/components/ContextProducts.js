@@ -36,6 +36,15 @@ import image_35 from '@/images/35.jpeg';
 import image_36 from '@/images/36.jpeg';
 import image_37 from '@/images/37.jpeg';
 import image_38 from '@/images/38.jpeg';
+import image_39 from '@/images/39.jpeg';
+import image_40 from '@/images/40.jpeg';
+import image_41 from '@/images/41.jpeg';
+import image_42 from '@/images/42.jpeg';
+import image_43 from '@/images/43.jpeg';
+import image_44 from '@/images/44.jpeg';
+import image_45 from '@/images/45.jpeg';
+import image_46 from '@/images/46.jpeg';
+
 
 const ContextProducts = createContext();
 
@@ -299,6 +308,62 @@ function ContextProviderP({ children }) {
             payment_time: '50 dias',
             payment_time_price: '6.000',
             price_counted: '180.000',
+        },
+        {
+            name: 'Licuadora Black Decker',
+            img: image_39,
+            payment_time: '50 dias',
+            payment_time_price: '5.000',
+            // price_counted: '180.000',
+        },
+        {
+            name: 'Cafetera Black Decker',
+            img: image_40,
+            payment_time: '50 dias',
+            payment_time_price: '5.000',
+            // price_counted: '180.000',
+        },
+        {
+            name: 'Olla',
+            img: image_41,
+            payment_time: '40 dias',
+            payment_time_price: '5.000',
+            // price_counted: '180.000',
+        },
+        {
+            name: 'Hervidor Agua Kalley ',
+            img: image_42,
+            payment_time: '40 dias',
+            payment_time_price: '6.000',
+            // price_counted: '180.000',
+        },
+        {
+            name: 'Exprimidor Oster',
+            img: image_43,
+            payment_time: '40 dias',
+            payment_time_price: '6.000',
+            // price_counted: '180.000',
+        },
+        {
+            name: 'Sanduchera',
+            img: image_44,
+            payment_time: '30 dias',
+            payment_time_price: '5.000',
+            // price_counted: '180.000',
+        },
+        {
+            name: 'Procesador alimentos Oster',
+            img: image_45,
+            payment_time: '30 dias',
+            payment_time_price: '6.000',
+            // price_counted: '180.000',
+        },
+        {
+            name: 'Cafetera Kalley',
+            img: image_46,
+            payment_time: '60 dias',
+            payment_time_price: '5.000',
+            // price_counted: '180.000',
         },
     ];
 
